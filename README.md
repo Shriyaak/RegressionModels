@@ -97,7 +97,65 @@ C: A constant that balances the trade-off between fitting the data and maintaini
 <BR/>
 <BR/>
 DECISION TREE REGRESSION <BR/>
+<PRE> 
+ Regression Tree 
+    X2
+    |      +  +
+    | +  +   +  +
+    | + + + + 
+    | +  +     +
+    |_____________ X1  
+   /
+  /
+ 
+Y 
+</PRE>
 
+- we have got two independent variables X1 and X2 <BR/>
+- and what we are predicting is the third variable a dependent variable ( Y is the third dimension)  <BR/>
+
+so once you run the decision tree algorithm in the regression sense of it, your scatter plot will be split into segments(each one of these splits is called a leaf) <BR/>
+- the final leafs are called the terminal leafs: <BR/>
+<PRE> 
+ SCATTER PLOT OF THE DATA: 
+     X2 split1  split3
+    | +  |    +|   +
+    |  + |  +  |+ +
+    | +  |+   +|
+    | + +| + + |
+170 |    |-----|----- split2 
+    | +  |+     +
+    |____|________ X1 
+         20    50
+</PRE>
+- The algorithm decides where to split the data by measuring something called information entropy, a mathematical concept that checks whether a split actually improves how well the data is grouped. If a split helps make the groups more meaningful, it's considered useful.<BR/>
+- The splitting process continues until the improvement (information gain) becomes too small. When the additional value from a split drops below a certain threshold, the algorithm stops making further splits <BR/>
+<PRE> 
+ Decision Tree: 
+
+so our 1st split happend at 20 so: 
+
+                 X1 < 20 
+             yes  /    \  no 
+                 /      \
+
+split 2 happens at 170 & only happens for points greater than 20 so: 
+
+                  X1 < 20 
+             yes  /    \  no 
+                 /      \ 
+         300.05       X2 < 170
+                      yes /  \ no 
+                         /    \
+                    65.7    x3 < 50 
+                         yes /  \ no 
+                            /    \
+                        -64.01   0.7 } average y-values 
+</PRE>
+- We check which group (leaf) the new point belongs to, based on its features. <BR/>
+- Each group already has some known Y-values. <BR/>
+- We find the average of those Y-values. <BR/>
+- The new point is given this average as its predicted Y-value <BR/>
 
 
 
