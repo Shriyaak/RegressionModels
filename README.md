@@ -57,7 +57,7 @@ Dependent Variable (y): Profit: The profit of the company, which we aim to predi
 <br/>
 <br/>
 <br/>
-POLYNOMIAL LINEAR REGRESSION 
+POLYNOMIAL LINEAR REGRESSION:<br/>  
 Polynomial Linear Regression is an extension of simple linear regression that allows us to model non-linear relationships between the dependent variable (y) and the independent variables (x). In simple linear regression, the relationship between the independent variable and the dependent variable is represented by a straight line. However, when the relationship between the variables is more complex and not linear, we use polynomial regression to fit a curved line to the data. <BR/>
 y = b0 + b1x1 + b2(x1)^2 + ...bn(x1)^n <BR/> 
 <Pre>
@@ -72,7 +72,7 @@ Y
 <br/>
 <br/>
 <br/>
-SUPPORT VECTOR REGRESSION (linear-SVR) <BR/> 
+SUPPORT VECTOR REGRESSION: (linear-SVR) <BR/> 
 In Support Vector Regression (SVR), much like Simple Linear Regression (SLR), we consider a regression line. However, instead of just a single line, SVR introduces a "tube" around the line, referred to as the ε-insensitive tube (where ε = epsilon). This tube has a width of epsilon, measured vertically along the axis (not perpendicularly). The purpose of this tube is to define a margin of error within which we disregard any deviations or errors from the regression line. <BR/> 
 <BR/>
 Key Concepts: <BR/>
@@ -156,6 +156,15 @@ split 2 happens at 170 & only happens for points greater than 20 so:
 - Each group already has some known Y-values. <BR/>
 - We find the average of those Y-values. <BR/>
 - The new point is given this average as its predicted Y-value <BR/>
+<br/>
+<br/>
+<br/>
+RANDOM FOREST REGRESSION: <br/>
+step1: Pick at Random K data points from the training set <br/>
+step2: Build the decision tree associated to these k data points <br/>
+step3: Choose the number Ntrees f trees you want to build and repeat steps 1 & 2 <br/>
+step4: For a new data point, make each one of your Ntree trees predict the value of Y. for the data point in question, and assign the new data point the average across all of the predicted Y values. <br/>
+
 
 
 
