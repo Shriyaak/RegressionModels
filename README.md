@@ -1,4 +1,4 @@
-SIMPLE LINEAR REGRESSION: <br/> 
+## SIMPLE LINEAR REGRESSION: 
 In this project, I begin by exploring Simple Linear Regression, which is a foundational regression technique used to model the relationship between a single independent variable (X1) and a dependent variable (y). The goal of this model is to find the best-fitting line that predicts y based on the value of X1. <br/>
 y = β0 +β1 x1 +β2 x2 + ⋯ +βp xp + ϵ <br/> 
 where,  <br/> 
@@ -28,8 +28,7 @@ YearsExperience (X1): The independent variable representing years of experience.
 Salary (y): The dependent variable representing the salary of an individual. <br/>
 <br/>
 <br/>
-<br/>
-MULTIPLE LINEAR REGRESSION: <br/>
+## MULTIPLE LINEAR REGRESSION: 
 <pre>
 |                
 |            + 
@@ -56,8 +55,7 @@ Independent Variables (X1, X2, X3, X4): <br/>
 Dependent Variable (y): Profit: The profit of the company, which we aim to predict based on the independent variables. <br/>
 <br/>
 <br/>
-<br/>
-POLYNOMIAL LINEAR REGRESSION:<br/>  
+## POLYNOMIAL LINEAR REGRESSION:
 Polynomial Linear Regression is an extension of simple linear regression that allows us to model non-linear relationships between the dependent variable (y) and the independent variables (x). In simple linear regression, the relationship between the independent variable and the dependent variable is represented by a straight line. However, when the relationship between the variables is more complex and not linear, we use polynomial regression to fit a curved line to the data. <BR/>
 y = b0 + b1x1 + b2(x1)^2 + ...bn(x1)^n <BR/> 
 <Pre>
@@ -71,8 +69,8 @@ Y
 </Pre>
 <br/>
 <br/>
-<br/>
-SUPPORT VECTOR REGRESSION: (linear-SVR) <BR/> 
+
+## SUPPORT VECTOR REGRESSION: (linear-SVR) 
 In Support Vector Regression (SVR), much like Simple Linear Regression (SLR), we consider a regression line. However, instead of just a single line, SVR introduces a "tube" around the line, referred to as the ε-insensitive tube (where ε = epsilon). This tube has a width of epsilon, measured vertically along the axis (not perpendicularly). The purpose of this tube is to define a margin of error within which we disregard any deviations or errors from the regression line. <BR/> 
 <BR/>
 Key Concepts: <BR/>
@@ -95,8 +93,9 @@ C: A constant that balances the trade-off between fitting the data and maintaini
 ξi, ξi*: Slack variables representing errors for points outside the ε-insensitive tube. <BR/>
 <BR/>
 <BR/>
-<BR/>
-DECISION TREE REGRESSION <BR/>
+
+## DECISION TREE REGRESSION: <BR/>
+
 <PRE> 
  Regression Tree 
     X2
@@ -158,8 +157,8 @@ split 2 happens at 170 & only happens for points greater than 20 so:
 - The new point is given this average as its predicted Y-value <BR/>
 <br/>
 <br/>
-<br/>
-RANDOM FOREST REGRESSION: <br/>
+
+## RANDOM FOREST REGRESSION:  <br/>
 step1: Pick at Random K data points from the training set <br/>
 step2: Build the decision tree associated to these k data points <br/>
 step3: Choose the number Ntrees f trees you want to build and repeat steps 1 & 2 <br/>
